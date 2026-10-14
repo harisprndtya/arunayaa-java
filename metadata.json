@@ -1,0 +1,6 @@
+{
+  "name": "Undangan Pernikahan Dinda & Gusti",
+  "description": "Undangan pernikahan digital adat Jawa Keraton untuk Dinda & Gusti — Minggu, 23 Agustus 2025 di Orchid Cikole, Bandung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

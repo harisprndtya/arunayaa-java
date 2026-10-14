@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+    --font-cinzel: 'Cinzel', Georgia, serif;
+    --font-script: 'Great Vibes', cursive;
+    --font-calligraphy: 'Pinyon Script', cursive;
+    --font-clock: 'Oswald', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    background-color: #EFE9DC;
+    color: #1A1715;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-display-gold {
+  font-family: var(--font-display);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-calligraphy {
+  font-family: var(--font-calligraphy);
+}
+
+.font-clock {
+  font-family: var(--font-clock);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Gold gradient button matching the reference screenshots */
+.btn-gold-pill {
+  background: linear-gradient(90deg, #F59E0B 0%, #FACC15 50%, #F59E0B 100%);
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.25);
+}
+
+.btn-gold-pill:hover {
+  background: linear-gradient(90deg, #D97706 0%, #FBBF24 50%, #D97706 100%);
+}
+
+/* Realistic curved paper shadow under the Q.S Ar-Rum card in 3.png */
+.paper-lifted-shadow {
+  position: relative;
+}
+
+.paper-lifted-shadow::after {
+  content: '';
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: -18px;
+  height: 28px;
+  background: radial-gradient(50% 60% at 50% 0%, rgba(26, 23, 21, 0.24) 0%, rgba(26, 23, 21, 0.08) 55%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
